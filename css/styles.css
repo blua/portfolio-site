@@ -6,7 +6,7 @@ body {
   color: #2d3c49;
 }
 
-.container {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -43,11 +43,14 @@ header {
   margin: 0;
 }
 
-main img {
-  width: 100%;
+main {
   padding-top: 20px;
   border-top: 3px #7d97ad solid;
   margin-top: 20px;
+}
+
+main img {
+  width: 100%;
 }
 
 .feat-title h1 {
@@ -56,24 +59,20 @@ main img {
   color: #7d97ad;
 }
 
-.box {
+article {
   width: 100%;
-  box-sizing: border-box;
+ article-sizing: borderarticle;
   text-align: center;
 }
 
-.box img {
-  width: 100%;
-}
-
-.box h1 {
+article h1 {
   text-transform: uppercase;
   font-size: 200%;
   font-weight: 300;
   margin: 5px 0 0 0;
 }
 
-.box p {
+article p {
   margin: 5px 0 20px 0;
 }
 
@@ -83,13 +82,13 @@ a:link, a:visited {
 }
 
 @media screen and (min-width: 500px) {
-  .box {
+  article {
     width: 48%; /* The rest is for spacing between them */
   }
 }
 
 @media screen and (min-width: 800px) {
-  .box {
+  article {
     width: 31.5%; /* The rest is for spacing between them */
   }
 }
@@ -97,7 +96,6 @@ a:link, a:visited {
 @media screen and (min-width: 900px) {
   body {
     width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
   }
 }
